@@ -1,0 +1,138 @@
+
+/* ctrl + H (найти и заменить для скаченіх шрифтов) example: (url('../fonts/Montserrat)*/
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('../fonts/SFUIText-Light.woff2') format('woff2'),
+        url('../fonts/SFUIText-Light.woff') format('woff');
+    font-weight: 300, 500, 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+/* font из браузера (добавить &display=swap&subset=cyrillic-ext для кирилического значения шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap&subset=cyrillic-ext');
+
+/* F1 для плагина Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lora:regular,700&display=swap&subset=cyrillic-ext');
+
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+}
+body{
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+  }
+
+  img{
+	  width: 500px;
+  }
+  .text{
+	  font-family: 'SF UI Text';
+	  font-weight: 700;
+	  font-style: regular;
+	  color: red;
+  }
+  h1{
+	  font-family: 'Montserrat';
+	  color: blue;
+	  font-weight: 700;
+	  text-decoration: underline;
+	  padding: 15px 0px 30px 50px;
+	  text-shadow: 2px 3px 1px burlywood;
+	  letter-spacing: 15px;
+	  line-height: 10;
+  }
+  body{
+	  background-color: burlywood;
+  }
+.author{
+	width: 300px;
+}
+.about1{
+	font-family: 'Lora';
+	font-weight: 300;
+	font-size: 20px;
+	color: cyan;
+	background-color: teal;
+	padding: 40px 40px 40px 40px;
+	margin: 25px 25px 25px 25px;
+}
+span{
+	color: crimson;
+	text-decoration: line-through;
+	font-weight: 600;
+	font-size: 30px;
+}
+h3{
+	font-family: 'Oswald';
+	font-size: 25px;
+	font-weight: 500;
+	color: rgb(50, 173, 50);
+}
+img{
+	margin: 0px 0px 0px 300px;
+	padding: 15px 15px 15px 15px;
+	background-color: yellow;
+	min-width: 100px;
+}
+p{
+	background-color: mediumseagreen;
+	padding: 30px 10px 30px 10px;
+	margin: 15px 15px 15px 15px;
+
+}
+footer{
+	font-family: 'Lora';
+	font-size: 20px;
+	font-weight: 700;
+}
+img.blog{
+	background-color: blue;
+	margin: 50px 0px 50px 400px;
+	padding: 50px 50px 50px 50px;
+}
+ol{
+	padding: 10px 0px 15px 50px;
+}
+.inline{
+	display: inline;
+}
